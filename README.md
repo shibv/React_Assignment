@@ -17,5 +17,5 @@ Currently, two official plugins are available:
 npm install
 
 # serve at localhost:3000
-npm start
+npm run dev
 ```
