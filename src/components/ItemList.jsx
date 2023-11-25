@@ -32,9 +32,9 @@ const ItemList = () => {
     } else {
       const newItem = {
         completed: false,
-        id: items.length + 1,
+        id: Math.random(),
         title: itemText,
-        userId: 10,
+        userId: Math.floor(Math.random() * 11),
       };
       setItems([...items, newItem]);
     }
