@@ -12,7 +12,7 @@ const Item = ({ item, removeItem, editItems, toggleCheck }) => {
       <input
         type="checkbox"
         checked={item.completed}
-        onClick={() => {
+        onChange={() => {
           toggleCheck(item.id);
         }}
       />

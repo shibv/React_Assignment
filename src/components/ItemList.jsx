@@ -32,11 +32,14 @@ const ItemList = () => {
     } else {
       const newItem = {
         completed: false,
-        id: Math.random(),
+        id: items.length+1,
         title: itemText,
-        userId: Math.floor(Math.random() * 11),
+        userId: 10,
       };
-      setItems([...items, newItem]);
+      const newArray = [...items, newItem]
+      newArray.reverse();
+      setItems(newArray);
+      
     }
     setItemText("");
     setval();
