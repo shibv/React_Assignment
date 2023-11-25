@@ -17,7 +17,7 @@ const Item = ({ item, removeItem, editItems, toggleCheck }) => {
         }}
       />
 
-      <p className={item.completed ? "isChecked" : ""}>{item.title}</p>
+      <p className={item.completed ? "isChecked" : "notChecked"}>{item.title}</p>
 
       <div>
         <FontAwesomeIcon
