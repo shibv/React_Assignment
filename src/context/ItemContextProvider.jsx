@@ -8,7 +8,7 @@ export const ItemProvider = ({ children }) => {
  useEffect(() => {
   async function fetchData(){
     const {data} = await axios.get(`https://jsonplaceholder.typicode.com/todos`)
-
+    
     setItems(data)
   }
   fetchData();
